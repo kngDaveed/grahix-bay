@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    font-family: 'Poppins', sans-serif;
+    outline: none;
+    scroll-behavior: smooth;
+}
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+section{
+  width: 90%;
+  margin:0 auto;
+}
+#banner{
+    background: linear-gradient(rgba(0,0,0,0.05),#999688),url(https://images.pexels.com/photos/4889302/pexels-photo-4889302.jpeg?auto=compress&cs=tinysrgb&w=600);
+    background-size:cover;
+    background-position: center;
+    height: 100vh;
+}
+.pt-7{
+    padding-top: 5rem;
+}
+.pb-7{
+    padding-bottom: 5rem;
+}
+.py-7{
+    padding: 5rem 0;
+}
+.section-sm{
+    min-height: 100vh;
+    padding: 5rem 1rem 2rem; 
+}
+.section-sm2{
+    padding: 5rem 0 0; 
+}
+.sub-section{
+    min-height: 100vh;
+    padding: 10rem 1rem 2rem;
+}
+.web{
+    display: block;
+}
+/* header and navbar functionality */
+.header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+ z-index: 99;
+ padding: 2rem 2rem;
+background: #fff;
+box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .2);
+}
+.header.sticky {
+    border-bottom: .1rem solid rgba(0, 0, 0, .2);
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .2);
+}
+.logo a{
+    font-size: 18px;
+}
+#nv-items a{
+    color: #000000;
+    text-decoration: none;
+    font-size: 14px;
+   padding: 1rem;
+    align-items:center;
+}
+
+#nv-items a:hover {
+    color:#4b9b7e;
+}
+
+#menu-icon{
+    font-size: 3.2rem;
+    color: #fff;
+    display: none;
+}
+.mobile{
+  display: none;
+}
+.display-md{
+    display: block;
+}
+.display-sm{
+    display: none;
+}
+.wth-md-75{
+    width: 75%;
+}
+
+.box{
+    display: flex;
+    flex-wrap: wrap;
+    gap: .5rem;
+}
+.box-item{
+    flex-grow: 1;
+    flex-basis: 200;
+}
+.w-50-md{
+    width: 50%;
+}
+
+  /* meadia query */
+  @media (max-width: 768px){
+    #menu-icon{
+        display: block;
+    }
+    header{
+      background: #fff;
+      padding: 2rem 2rem !important;
+    }
+    .mobile{
+      display: block;
+    }
+    .web{
+        display: none;
+    }
+    .nv-item {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        padding: 1rem 3% !important;
+        background: #fff;
+        color: #0f885b;
+        border-top: .1rem solid rgba(0, 0, 0, .2);
+        box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .2);
+        display: none;
+    }
+
+    .nv-item.active{
+        display: block;
+        height: 50vh;
+        text-align: start !important; 
+    }
+      .nv-item a{
+        display: block !important;
+        margin: 1rem 0;
+    }
+    .display-sm{
+        display: block !important;
+    }
+    .display-md{
+        display: none !important;
+    }
+    .wth-md{
+        width: 100%;
+    }
+    .w-50-md{
+        width: 100%;
+    }
+    
+}
